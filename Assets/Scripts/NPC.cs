@@ -12,23 +12,13 @@ public class NPC : MonoBehaviour, IChoicesForWheel
     [SerializeField] DialogueScriptableObject bribe;
     [SerializeField] DialogueScriptableObject shop;
 
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    [SerializeField] ItemScriptableObject[] itemsInShop;
 
     private void OnMouseDown()
     {
+        if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+            return;
+
         FindObjectOfType<ChoiceWheelManager>().OpenWheel(this);
     }
 
@@ -50,7 +40,9 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     public void GetShop()
     {
-        FindObjectOfType<DialogueManager>().StartConversation(shop);
+        FindObjectOfType<DialogueManager>().StartConversation(shop, true);
+        print(gameObject.name);
+        FindObjectOfType<ShopManager>().SetShopwares(itemsInShop);
 
         if (shop.HaveFollowupDialogue())
             shop = shop.GetFollowupDialogue();

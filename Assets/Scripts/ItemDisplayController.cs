@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -12,9 +13,16 @@ public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPoint
     bool pointerOver = false;
     [SerializeField] bool inShop = false;
 
-    public void Initialize( ItemScriptableObject item)
+    public void Initialize( ItemScriptableObject item, bool inShop = false)
     {
         this.item = item;
+        this.inShop = inShop;
+        Start();
+    }
+
+    public void Start()
+    {
+        GetComponent<Image>().sprite = item.GetSprite();
     }
 
     public void Update()

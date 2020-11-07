@@ -10,12 +10,10 @@ public class ChoiceWheelManager : MonoBehaviour
     [SerializeField] Button bribeButton;
     [SerializeField] Button shopButton;
 
-    IChoicesForWheel currentChoices;
-
     public void OpenWheel(IChoicesForWheel choices)
     {
+        GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = true;
         choiceWheel.SetActive(true);
-        currentChoices = choices;
 
         rumourButton.onClick.AddListener(choices.GetRumour);
         bribeButton.onClick.AddListener(choices.GetBribe);
@@ -26,11 +24,8 @@ public class ChoiceWheelManager : MonoBehaviour
     {
         choiceWheel.SetActive(false);
 
-        if (currentChoices != null)
-        {
-            rumourButton.onClick.RemoveListener(currentChoices.GetRumour);
-            bribeButton.onClick.RemoveListener(currentChoices.GetBribe);
-            shopButton.onClick.RemoveListener(currentChoices.GetShop);
-        }
+        rumourButton.onClick.RemoveAllListeners();
+        bribeButton.onClick.RemoveAllListeners();
+        shopButton.onClick.RemoveAllListeners();
     }
 }

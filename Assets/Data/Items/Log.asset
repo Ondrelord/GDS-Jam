@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f761c2e61de258428b006a56ad0bad1, type: 3}
-  m_Name: Item
+  m_Name: Log
   m_EditorClassIdentifier: 
-  tags: []
-  itemName: Sword
-  description: Its sharp
-  price: 50
+  itemName: Log
+  description: Wooden log. Don't go anywhere without one.
+  price: 10
+  itemIcon: {fileID: 21300000, guid: 074fee83468323840a07df1d685b3d07, type: 3}
+  tags:
+  - wooden

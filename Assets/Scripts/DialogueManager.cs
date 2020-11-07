@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
 
     bool opened = false;
     float t = 0;
+    bool isShop = false;
 
     private void Start()
     {
@@ -36,15 +37,15 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    public void StartConversation(DialogueScriptableObject dialogue)
+    public void StartConversation(DialogueScriptableObject dialogue, bool isShop = false)
     {
+        GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = true;
         sentences.Clear();
 
         foreach (string sentence in dialogue.GetSentences())
-        {
             sentences.Enqueue(sentence);
-        }
 
+        this.isShop = isShop;
         opened = true;
 
         dialogueNPCImage.sprite = dialogue.GetImage();
@@ -81,7 +82,14 @@ public class DialogueManager : MonoBehaviour
 
     public void EndConversation()
     {
+        if (isShop)
+        {
+            FindObjectOfType<ShopManager>().OpenShop();
+            isShop = false;
+        }
+
         opened = false;
+        GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = false;
     }
 
 

@@ -6,11 +6,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Item", menuName = "Item")]
 public class ItemScriptableObject : ScriptableObject
 {
-    [SerializeField] List<string> tags;
-
     [SerializeField] string itemName;
+    [TextArea]
     [SerializeField] string description;
     [SerializeField] int price = 0;
+    [SerializeField] Sprite itemIcon;
+    
+    [SerializeField] List<string> tags;
 
     public string GetName() => itemName;
     public string GetDescription() => description;
@@ -33,4 +35,5 @@ public class ItemScriptableObject : ScriptableObject
     }
 
     public int GetPrice() => price;
+    public Sprite GetSprite() => itemIcon;
 }

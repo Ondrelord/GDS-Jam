@@ -9,7 +9,11 @@ public class ShopItemMenuResizer : MonoBehaviour
 
     void Start()
     {
-        GetComponent<RectTransform>().sizeDelta = new Vector2(0, (Mathf.CeilToInt(transform.childCount / 4f) * (grid.cellSize.y + grid.spacing.y)) + grid.padding.top + grid.padding.bottom);
+        UpdateSize();
     }
 
+    public void UpdateSize()
+    {
+        GetComponent<RectTransform>().sizeDelta = new Vector2(0, (Mathf.CeilToInt(transform.childCount / 4f) * (grid.cellSize.y + grid.spacing.y)) + grid.padding.top + grid.padding.bottom);
+    }
 }
