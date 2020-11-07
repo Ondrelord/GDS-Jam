@@ -36,14 +36,6 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     }
 
-    public void TriggerConversation(DialogueScriptableObject dialogue)
-    {
-        FindObjectOfType<DialogueManager>().StartConversation(dialogue);
-
-        if (dialogue.HaveFollowupDialogue())
-            dialogue = dialogue.GetFollowupDialogue();
-    }
-
     private void OnMouseDown()
     {
         FindObjectOfType<ChoiceWheelManager>().OpenWheel(this);
@@ -51,16 +43,25 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     public void GetRumour()
     {
-        TriggerConversation(rumour);
+        FindObjectOfType<DialogueManager>().StartConversation(rumour);
+
+        if (rumour.HaveFollowupDialogue())
+            rumour = rumour.GetFollowupDialogue();
     }
 
     public void GetBribe()
     {
-        TriggerConversation(bribe);
+        FindObjectOfType<DialogueManager>().StartConversation(bribe);
+
+        if (bribe.HaveFollowupDialogue())
+            bribe = bribe.GetFollowupDialogue();
     }
 
     public void GetShop()
     {
-        TriggerConversation(shop);
+        FindObjectOfType<DialogueManager>().StartConversation(shop);
+
+        if (shop.HaveFollowupDialogue())
+            shop = shop.GetFollowupDialogue();
     }
 }
