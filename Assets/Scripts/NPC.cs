@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public interface IChoicesForWheel
-{
-    void GetRumour();
-    void GetBribe();
-    void GetShop();
-
-}
-
-
 public class NPC : MonoBehaviour, IChoicesForWheel
 {
     [SerializeField] string npcName;
