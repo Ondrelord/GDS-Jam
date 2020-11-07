@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [SerializeField] ItemScriptableObject item;
 
     float timer = 0.7f;
 
     bool pointerOver = false;
+    [SerializeField] bool inShop = false;
 
     public void Initialize( ItemScriptableObject item)
     {
@@ -37,5 +38,18 @@ public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPoint
         pointerOver = false;
         timer = 0.7f;
         FindObjectOfType<TooltipManager>().HideTooltip();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (inShop)
+        {
+            GameManager GM = FindObjectOfType<GameManager>();
+            if (GM.SpendMoney(item.GetPrice()))
+            {
+                GM.NewItem(item);
+                Destroy(gameObject);
+            }
+        }
     }
 }

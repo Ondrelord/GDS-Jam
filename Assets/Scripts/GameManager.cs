@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         if (moneyCurrent - amount >= 0)
         {
             moneyCurrent -= amount;
+            UpdateMoneyDisplay();
             return true;
         }
         else
