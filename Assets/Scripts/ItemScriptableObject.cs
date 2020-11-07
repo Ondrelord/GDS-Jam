@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class ItemScriptableObject : ScriptableObject
 
     [SerializeField] string itemName;
     [SerializeField] string description;
+    [SerializeField] int price = 0;
 
     public string GetName() => itemName;
     public string GetDescription() => description;
@@ -29,4 +31,6 @@ public class ItemScriptableObject : ScriptableObject
 
         return count;
     }
+
+    public int GetPrice() => price;
 }

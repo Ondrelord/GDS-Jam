@@ -21,7 +21,7 @@ public class ItemDisplayController : MonoBehaviour, IPointerEnterHandler, IPoint
         if (pointerOver)
         {
             if (timer <= 0)
-                FindObjectOfType<TooltipManager>().ShowTooltip(item.GetName(), item.GetDescription());
+                FindObjectOfType<TooltipManager>().ShowTooltip(item.GetName(), item.GetDescription(), item.GetPrice().ToString());
             else
                 timer -= Time.deltaTime;
         }

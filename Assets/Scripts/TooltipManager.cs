@@ -9,8 +9,9 @@ public class TooltipManager : MonoBehaviour
     [SerializeField] RectTransform tooltip;
     [SerializeField] TextMeshProUGUI tooltipName;
     [SerializeField] TextMeshProUGUI tooltipText;
+    [SerializeField] TextMeshProUGUI tooltipPrice;
 
-    public void ShowTooltip(string name, string text)
+    public void ShowTooltip(string name, string text, string price = "")
     {
         Vector2 mousePos = Input.mousePosition;
 
@@ -21,6 +22,7 @@ public class TooltipManager : MonoBehaviour
 
         tooltipName.text = name;
         tooltipText.text = text;
+        tooltipPrice.text = price;
 
         tooltip.gameObject.SetActive(true);
     }
