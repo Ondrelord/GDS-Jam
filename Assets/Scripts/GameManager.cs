@@ -33,4 +33,18 @@ public class GameManager : MonoBehaviour
         moneyDisplayText.text = moneyCurrent.ToString();
     }
 
+    public int GetMoney() => moneyCurrent;
+    public bool SpendMoney(int amount)
+    {
+        if (moneyCurrent - amount >= 0)
+        {
+            moneyCurrent -= amount;
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public List<ItemScriptableObject> GetItemList() => itemArray;
+
 }
