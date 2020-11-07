@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ab0b36a983078499df9c9956c241b6, type: 3}
   m_Name: Dialogue
   m_EditorClassIdentifier: 
+  npcImage: {fileID: 21300000, guid: 4cdd5ec4674f8d44a952d6c606e0076e, type: 3}
   npcName: Jonson
   sentences:
   - Hi there.
   - What are you doing here?
   - 'Go kill that bastard or I will beat your ass so ... '
+  followupDialoge: {fileID: 0}
