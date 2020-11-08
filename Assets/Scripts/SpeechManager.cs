@@ -71,13 +71,13 @@ public class personalDialoque
 
         //dialoque = new DialogueScriptableObject();
         //split speech of each person in dialoque
-        Debug.Log(str);
+        //Debug.Log(str);
         string[] dial = str.Split('!');
         if (dial.Length == 0)
         {
             return;
         }
-        Debug.Log(dial[0]);
+        //Debug.Log(dial[0]);
         //Debug.Log("\n\n");
         //Debug.Log(dial.Length);
         dialoque = ScriptableObject.CreateInstance<DialogueScriptableObject>();
@@ -98,8 +98,31 @@ public class personalDialoque
             }
             else
             {
-                dialoque.speakerName.Add(sentence.Substring(0, startPos-1));
-                dialoque.sentences.Add(sentence.Substring(startPos, sentence.Length));
+                if(sentence != "" && sentence != "\n" && sentence.Length > 1)
+                {
+                    string tmp = "";
+                    if (sentence[0] == '\n')
+                    {
+                        tmp += sentence.Substring(1, startPos-1);
+                        Debug.Log(tmp);
+                        dialoque.speakerName.Add(sentence.Substring(1, startPos-1));
+                    }
+                    else
+                    {
+                        tmp += sentence.Substring(0, startPos);
+                        Debug.Log(tmp);
+                        dialoque.speakerName.Add(sentence.Substring(0, startPos));
+                    }
+                        
+                    dialoque.sentences.Add(sentence.Substring(startPos + 2, (sentence.Length - startPos - 2)));
+                }
+                else
+                {
+                    string tmp = "nevypis: ";
+                    tmp += sentence;
+                }
+
+                dialoque.monsterName = SpeechManager.actualMonsterName;
             }
 
             i++;
@@ -144,8 +167,12 @@ public class SpeechManager : MonoBehaviour
         {
             if (monster == "" || monster == "\n")
                 continue;
+
+            int startPos = monster.IndexOf(" ", 0, monster.Length);
+            actualMonsterName = monster.Substring(0, startPos);
+            string monSbstr = monster.Substring(startPos + 1, (monster.Length - startPos - 1));
             monsterDialogs[i] = new Monsters();
-            monsterDialogs[i].loadBuildings(monster);
+            monsterDialogs[i].loadBuildings(monSbstr);
             i++;
         }
     }
