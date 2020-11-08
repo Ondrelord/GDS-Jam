@@ -21,4 +21,19 @@ public class MonsterSO : ScriptableObject
     public DialogueScriptableObject GetLose() => loseText;
     public DialogueScriptableObject GetDraw() => drawText;
 
+    public void setWinText(DialogueScriptableObject d)
+    {
+        winText = d;
+    }
+
+    public void setLoseText(DialogueScriptableObject d)
+    {
+        loseText = d;
+    }
+
+    public void setDrawText(DialogueScriptableObject d)
+    {
+        drawText = d;
+    }
+
 }

@@ -72,8 +72,17 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        string speaker;
+
         string sentence = sentences.Dequeue();
-        string speaker = speakerNames.Dequeue();
+        if(speakerNames.Count == 0)
+        {
+            speaker = "";
+        }
+        else
+        {
+            speaker = speakerNames.Dequeue();
+        }
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence, speaker));

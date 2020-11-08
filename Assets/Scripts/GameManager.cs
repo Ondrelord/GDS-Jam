@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject itemDisplayPrefab;
     [SerializeField] TextMeshProUGUI moneyDisplayText;
 
-    [SerializeField] MonsterSO monster;
+    [SerializeField] public MonsterSO monster;
+    public int monsterNumber;
 
     [SerializeField] NamedImage[] speakerSprites;
 
@@ -48,6 +49,9 @@ public class GameManager : MonoBehaviour
         magicBuilding.description = "Magic Tower";
         smithBuilding.description = "Blacksmith";
         innBuilding.description = "Tavern";
+
+        monsterNumber = 0;
+        //InitMonster(monsterNumber);
     }
 
     public void NewItem(ItemScriptableObject item)
@@ -93,13 +97,15 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
-    public void InitMonster()
+    public void InitMonster(int monsterNumber)
     {
         Monsters[] monsters = GetComponent<SpeechManager>().getMonsterDialogs();
 
-        //hard coded
 
-        int j = 0;
+        if (monsterNumber >= monsters.Length)
+            return;
+
+        int j = monsterNumber;
         for(int i = 0; i < monsters[j].buildings.Length; i++)
         {
             switch(i)

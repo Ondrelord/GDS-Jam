@@ -31,7 +31,7 @@ public class Monsters
         {
             if (dialoque == "" || dialoque == "\n")
                 continue;
-            Debug.Log(dialoque);
+            //Debug.Log(dialoque);
             buildings[i] = new MonsterDialoqueBuildings();
             buildings[i].loadDialoques(dialoque);
             i++;
@@ -131,13 +131,13 @@ public class SpeechManager : MonoBehaviour
     void Start()
     {
         loadDialogs();
+        GetComponent<GameManager>().InitMonster(0);
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<GameManager>().InitMonster();
     }
 
     void loadDialogs()
