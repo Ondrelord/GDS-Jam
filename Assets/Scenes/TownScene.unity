@@ -8216,7 +8216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0.1.30
+  m_text: 0.1.44
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10890,11 +10890,11 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 120c4dff37bfdfc4eb4de21ee6ee4833, type: 3}
   - name: MA
     image: {fileID: 0}
-  - name: Bulky man
+  - name: Bulkyman
     image: {fileID: 21300000, guid: 08e3b65f5384acc4fa4a812eb5290ee4, type: 3}
-  - name: Slender man
+  - name: Slenderman
     image: {fileID: 21300000, guid: 08e3b65f5384acc4fa4a812eb5290ee4, type: 3}
-  - name: Short man
+  - name: Shortman
     image: {fileID: 21300000, guid: 08e3b65f5384acc4fa4a812eb5290ee4, type: 3}
   - name: LI
     image: {fileID: 21300000, guid: c95c887b6d3c8c44489240e072ae6640, type: 3}
