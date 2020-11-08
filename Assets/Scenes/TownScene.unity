@@ -9385,7 +9385,7 @@ MonoBehaviour:
   - name: Yola
     image: {fileID: 0}
   alchemyBuilding: {fileID: 1435579140}
-  libraryBuilding: {fileID: 0}
+  libraryBuilding: {fileID: 1156849630}
   magicBuilding: {fileID: 813053099}
   smithBuilding: {fileID: 2008144174}
   innBuilding: {fileID: 1547457630}
