@@ -14,6 +14,10 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     [SerializeField] ItemScriptableObject[] itemsInShop;
 
+    public bool b_canRumour = true;
+    public bool b_canBribe = true;
+    public bool b_canShop = true;
+
     private void OnMouseDown()
     {
         if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
@@ -48,9 +52,9 @@ public class NPC : MonoBehaviour, IChoicesForWheel
             shop = shop.GetFollowupDialogue();
     }
 
-    public virtual bool canShop() => true;
+    public bool canShop() => b_canRumour;
 
-    public virtual bool canBribe() => true;
+    public bool canBribe() => b_canBribe;
 
-    public virtual bool canRumour() => true;
+    public bool canRumour() => b_canShop;
 }

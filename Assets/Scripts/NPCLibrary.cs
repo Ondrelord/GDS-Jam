@@ -8,7 +8,4 @@ public class NPCLibrary : NPC
     {
         FindObjectOfType<BookManager>().OpenBook(rumour);
     }
-
-    public override bool canBribe() => false;
-    public override bool canShop() => false;
 }
