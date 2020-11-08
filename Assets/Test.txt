@@ -1,0 +1,5 @@
+drak ja: doma!*/
+ja: doma!*/
+ty: prec*/|
+drak2 ja2: doma2!/*
+ty2: prec2
