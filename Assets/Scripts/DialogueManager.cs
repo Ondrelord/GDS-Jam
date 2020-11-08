@@ -52,8 +52,8 @@ public class DialogueManager : MonoBehaviour
         foreach (string sentence in dialogue.GetSentences())
             sentences.Enqueue(sentence);
 
-        /*foreach (string speaker in dialogue.GetSpeakerNames())
-            speakerNames.Enqueue(speaker);*/
+        foreach (string speaker in dialogue.GetSpeakerNames())
+            speakerNames.Enqueue(speaker);
 
         this.isShop = isShop;
         opened = true;

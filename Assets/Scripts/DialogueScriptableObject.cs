@@ -17,6 +17,7 @@ public class DialogueScriptableObject : ScriptableObject
     [SerializeField] DialogueScriptableObject followupDialoge;
 
     public List<string> GetSentences() => sentences;
+    public List<string> GetSpeakerNames() => speakerName;
     public string GetName() => npcName;
     public Sprite GetImage() => npcImage;
     public bool HaveFollowupDialogue() => followupDialoge != null;
