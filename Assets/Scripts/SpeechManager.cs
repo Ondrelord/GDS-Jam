@@ -132,6 +132,8 @@ public class SpeechManager : MonoBehaviour
     {
         loadDialogs();
         GetComponent<GameManager>().InitMonster(0);
+        GetComponent<GameManager>().monsterNumber = 0;
+        
     }
 
 
