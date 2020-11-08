@@ -52,9 +52,9 @@ public class NPC : MonoBehaviour, IChoicesForWheel
             shop = shop.GetFollowupDialogue();
     }
 
-    public bool canShop() => b_canRumour;
+    public bool canShop() => b_canShop;
 
     public bool canBribe() => b_canBribe;
 
-    public bool canRumour() => b_canShop;
+    public bool canRumour() => b_canRumour;
 }
