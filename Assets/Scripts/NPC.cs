@@ -14,6 +14,8 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     [SerializeField] ItemScriptableObject[] itemsInShop;
 
+    public string description;
+
     public bool b_canRumour = false;
     public bool b_canBribe = false;
     public bool b_canShop = false;
