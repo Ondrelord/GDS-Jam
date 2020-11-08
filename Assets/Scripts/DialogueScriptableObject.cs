@@ -8,6 +8,7 @@ public class DialogueScriptableObject : ScriptableObject
 {
     [SerializeField] public Sprite npcImage;
     [SerializeField] public string npcName;
+    [SerializeField] public string monsterName;
 
     [TextArea]
     [SerializeField] public List<string> speakerName;
