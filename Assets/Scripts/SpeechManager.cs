@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Linq;
 
 using System.IO;
 using System.Text;
@@ -30,6 +31,7 @@ public class Monsters
         {
             if (dialoque == "" || dialoque == "\n")
                 continue;
+            Debug.Log(dialoque);
             buildings[i] = new MonsterDialoqueBuildings();
             buildings[i].loadDialoques(dialoque);
             i++;
@@ -100,26 +102,15 @@ public class personalDialoque
             {
                 if(sentence != "" && sentence != "\n" || sentence.Length > 1)
                 {
-                    //string tmp = "";
-                    if (sentence[0] == '\n')
-                    {
-                        /*tmp += sentence.Substring(1, startPos-1);
-                        Debug.Log(tmp);*/
-                        dialoque.speakerName.Add(sentence.Substring(1, startPos-1));
-                    }
-                    else
-                    {
-                        /*tmp += sentence.Substring(0, startPos);
-                        Debug.Log(tmp);*/
-                        dialoque.speakerName.Add(sentence.Substring(0, startPos));
-                    }
-                        
+                    dialoque.speakerName.Add(@sentence.Substring(0, startPos));
+                    dialoque.speakerName[dialoque.speakerName.Count - 1] = String.Concat(dialoque.speakerName[dialoque.speakerName.Count-1].Where(c => !Char.IsWhiteSpace(c)));
                     dialoque.sentences.Add(sentence.Substring(startPos + 2, (sentence.Length - startPos - 2)));
                 }
                 else
                 {
                     string tmp = "nevypis: ";
                     tmp += sentence;
+                    Debug.Log(tmp);
                 }
 
                 dialoque.monsterName = SpeechManager.actualMonsterName;
@@ -140,7 +131,6 @@ public class SpeechManager : MonoBehaviour
     void Start()
     {
         loadDialogs();
-        
     }
 
 
@@ -174,6 +164,8 @@ public class SpeechManager : MonoBehaviour
             string monSbstr = monster.Substring(startPos + 1, (monster.Length - startPos - 1));
             monsterDialogs[i] = new Monsters();
             monsterDialogs[i].monsterName = actualMonsterName;
+
+            //Debug.Log(monster);
             monsterDialogs[i].loadBuildings(monSbstr);
             i++;
         }
