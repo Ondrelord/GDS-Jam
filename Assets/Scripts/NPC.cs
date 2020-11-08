@@ -20,12 +20,29 @@ public class NPC : MonoBehaviour, IChoicesForWheel
     public bool b_canBribe = false;
     public bool b_canShop = false;
 
+    Vector3 originalScale;
+
+    public void Start()
+    {
+        originalScale = transform.localScale;
+    }
+
     private void OnMouseDown()
     {
         if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
             return;
 
         FindObjectOfType<ChoiceWheelManager>().OpenWheel(this);
+    }
+
+    private void OnMouseEnter()
+    {
+        transform.localScale = originalScale * 1.1f;
+    }
+
+    private void OnMouseExit()
+    {
+        transform.localScale = originalScale;
     }
 
     public virtual void GetRumour()
