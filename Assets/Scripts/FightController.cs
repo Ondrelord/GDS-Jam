@@ -10,7 +10,7 @@ public class FightController : MonoBehaviour
     private void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        GetComponent<FightController>().setUpNewMonster();
+        //GetComponent<FightController>().setUpNewMonster();
     }
 
 
