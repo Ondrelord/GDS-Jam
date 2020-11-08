@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+using System.Collections;
+
 
 public class NPC : MonoBehaviour, IChoicesForWheel
 {
@@ -13,6 +16,8 @@ public class NPC : MonoBehaviour, IChoicesForWheel
     [SerializeField] protected DialogueScriptableObject shop;
 
     [SerializeField] ItemScriptableObject[] itemsInShop;
+
+    public string description;
 
     public bool b_canRumour = false;
     public bool b_canBribe = false;
@@ -72,4 +77,15 @@ public class NPC : MonoBehaviour, IChoicesForWheel
     public bool canBribe() => b_canBribe;
 
     public bool canRumour() => b_canShop;
+
+    void OnMouseOver()
+    {
+        FindObjectOfType<TooltipManager>().ShowTooltip("", description);
+        //If your mouse hovers over the GameObject with the script attached, output this message
+        //Debug.Log("Mouse is over GameObject.");
+    }
+    void OnMouseExit()
+    {
+        FindObjectOfType<TooltipManager>().HideTooltip();
+    }
 }

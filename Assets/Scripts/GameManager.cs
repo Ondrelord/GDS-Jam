@@ -42,6 +42,12 @@ public class GameManager : MonoBehaviour
     {
         itemArray = new List<ItemScriptableObject>();
         UpdateMoneyDisplay();
+
+        alchemyBuilding.description = "Alchemy building";
+        libraryBuilding.description = "Library";
+        magicBuilding.description = "Magic Tower";
+        smithBuilding.description = "Blacksmith";
+        innBuilding.description = "Tavern";
     }
 
     public void NewItem(ItemScriptableObject item)
