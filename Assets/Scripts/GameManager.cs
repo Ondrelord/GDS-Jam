@@ -78,4 +78,9 @@ public class GameManager : MonoBehaviour
 
         return null;
     }
+
+    public void InitMonster()
+    {
+        var monsters = GetComponent<SpeechManager>().getMonsterDialogs();
+    }
 }
