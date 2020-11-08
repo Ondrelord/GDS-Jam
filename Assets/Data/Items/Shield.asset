@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ab0b36a983078499df9c9956c241b6, type: 3}
-  m_Name: Dialog1Monster
+  m_Script: {fileID: 11500000, guid: 4f761c2e61de258428b006a56ad0bad1, type: 3}
+  m_Name: Shield
   m_EditorClassIdentifier: 
-  npcImage: {fileID: 0}
-  npcName: 
-  speakerName: []
-  sentences:
-  - fcb
-  - fdbdf
-  followupDialoge: {fileID: 0}
+  itemName: Shield
+  description: Protection 101.
+  price: 40
+  itemIcon: {fileID: 21300000, guid: 9474503f303f24f49b70cb6d52078e26, type: 3}
+  tags:
+  - protects
+  - heavy

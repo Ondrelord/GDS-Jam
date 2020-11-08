@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ab0b36a983078499df9c9956c241b6, type: 3}
-  m_Name: Dialog1Monster
+  m_Script: {fileID: 11500000, guid: 4f761c2e61de258428b006a56ad0bad1, type: 3}
+  m_Name: Mirror
   m_EditorClassIdentifier: 
-  npcImage: {fileID: 0}
-  npcName: 
-  speakerName: []
-  sentences:
-  - fcb
-  - fdbdf
-  followupDialoge: {fileID: 0}
+  itemName: Mirror
+  description: I ... look... awesome.
+  price: 20
+  itemIcon: {fileID: 21300000, guid: 418dbde13019e4b42a96c8e3002cd138, type: 3}
+  tags:
+  - reflect

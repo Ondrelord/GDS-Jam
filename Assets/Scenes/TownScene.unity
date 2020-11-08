@@ -3559,7 +3559,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 04cbb675a98d35a4d963133cb3f2c0ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8966,11 +8966,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee82670f05ee614b84ff4036f867a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyCurrent: 50
+  moneyCurrent: 1000
   itemArray: []
   itemListFather: {fileID: 281506707}
   itemDisplayPrefab: {fileID: 449700411468186446, guid: 6d5bc956cf4a82041bd841740a7fcb33, type: 3}
   moneyDisplayText: {fileID: 823830311}
+  monster: {fileID: 0}
 --- !u!4 &1835277556
 Transform:
   m_ObjectHideFlags: 0
@@ -10236,7 +10237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f6441c643f48fd4090d6f2f01ec80b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74a27f179f5182646a3826991d4a9d43, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

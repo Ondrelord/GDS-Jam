@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> sentences;
+    private Queue<string> speakerNames;
 
     [SerializeField] Transform dialogueWindow;
     [SerializeField] Transform dialogueWindowClose;
@@ -21,12 +22,17 @@ public class DialogueManager : MonoBehaviour
     float t = 0;
     bool isShop = false;
 
+    GameManager gm;
+
     private void Start()
     {
         sentences = new Queue<string>();
+        speakerNames = new Queue<string>();
 
         dialogueWindowOpenPos = dialogueWindow.position;
         dialogueWindowClosePos = dialogueWindowClose.position;
+
+        gm = FindObjectOfType<GameManager>();
     }
 
     private void Update()
@@ -41,9 +47,13 @@ public class DialogueManager : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = true;
         sentences.Clear();
+        speakerNames.Clear();
 
         foreach (string sentence in dialogue.GetSentences())
             sentences.Enqueue(sentence);
+
+        /*foreach (string speaker in dialogue.GetSpeakerNames())
+            speakerNames.Enqueue(speaker);*/
 
         this.isShop = isShop;
         opened = true;
@@ -63,13 +73,17 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        string speaker = speakerNames.Dequeue();
         
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(sentence, speaker));
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence, string speaker)
     {
+        dialogueNPCImage.sprite = gm.GetSpeakerSprite(speaker);
+
+        dialogueNPCName.text = speaker;
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray())

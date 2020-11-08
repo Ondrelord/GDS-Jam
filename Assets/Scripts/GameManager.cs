@@ -1,8 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+
+[Serializable]
+public struct NamedImage
+{
+    public string name;
+    public Sprite image;
+}
+
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +22,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform itemListFather;
     [SerializeField] GameObject itemDisplayPrefab;
     [SerializeField] TextMeshProUGUI moneyDisplayText;
+
+    [SerializeField] MonsterSO monster;
+
+    [SerializeField] NamedImage[] speakerSprites;
+
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,4 +64,18 @@ public class GameManager : MonoBehaviour
 
     public List<ItemScriptableObject> GetItemList() => itemArray;
 
+    public MonsterSO GetMonster() => monster;
+
+
+
+    public Sprite GetSpeakerSprite(string speaker)
+    {
+        for (int i = 0; i < speakerSprites.Length; ++i)
+        {
+            if (speaker == speakerSprites[i].name)
+                return speakerSprites[i].image;
+        }
+
+        return null;
+    }
 }
