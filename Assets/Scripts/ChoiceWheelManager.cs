@@ -26,11 +26,14 @@ public class ChoiceWheelManager : MonoBehaviour
         choiceWheel.SetActive(true);
 
         if (choices.canRumour()) rumourButton.onClick.AddListener(choices.GetRumour);
-        if (choices.canBribe() && FindObjectOfType<GameManager>().GetMoney() >= 25) bribeButton.onClick.AddListener(choices.GetBribe);
+        if (choices.canBribe()) bribeButton.onClick.AddListener(choices.GetBribe);
         if (choices.canShop()) shopButton.onClick.AddListener(choices.GetShop);
 
         rumourButton.gameObject.SetActive(choices.canRumour());
+        
         bribeButton.gameObject.SetActive(choices.canBribe());
+        if (choices.canBribe()) bribeButton.interactable = FindObjectOfType<GameManager>().GetMoney() >= 25;
+        
         shopButton.gameObject.SetActive(choices.canShop());
     }
 
