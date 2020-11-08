@@ -81,7 +81,15 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence, string speaker)
     {
-        dialogueNPCImage.sprite = gm.GetSpeakerSprite(speaker);
+        Sprite sprite = gm.GetSpeakerSprite(speaker);
+
+        if (sprite != null)
+        {
+            dialogueNPCImage.sprite = sprite;
+            dialogueNPCImage.enabled = true;
+        }
+        else
+            dialogueNPCImage.enabled = false;
 
         dialogueNPCName.text = speaker;
         dialogueText.text = "";
