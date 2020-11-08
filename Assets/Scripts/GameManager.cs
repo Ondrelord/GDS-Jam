@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject itemDisplayPrefab;
     [SerializeField] TextMeshProUGUI moneyDisplayText;
 
-    [SerializeField] MonsterSO monster;
+    [SerializeField] public MonsterSO monster;
+    public int monsterNumber;
 
     [SerializeField] NamedImage[] speakerSprites;
 
@@ -35,7 +36,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] NPC smithBuilding;
     [SerializeField] NPC innBuilding;
 
-    
+    [Header("Monster")]
+    [SerializeField] MonsterSO[] MonsterArray;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,9 @@ public class GameManager : MonoBehaviour
         magicBuilding.description = "Magic Tower";
         smithBuilding.description = "Blacksmith";
         innBuilding.description = "Tavern";
+
+        monsterNumber = 0;
+        //InitMonster(monsterNumber);
     }
 
     public void NewItem(ItemScriptableObject item)
@@ -63,6 +68,11 @@ public class GameManager : MonoBehaviour
         moneyDisplayText.text = moneyCurrent.ToString();
     }
 
+    public void AddMoney(int amount)
+    {
+        moneyCurrent += amount;
+        UpdateMoneyDisplay();
+    }
     public int GetMoney() => moneyCurrent;
     public bool SpendMoney(int amount)
     {
@@ -93,13 +103,18 @@ public class GameManager : MonoBehaviour
         return null;
     }
 
-    public void InitMonster()
+    public void InitMonster(int monsterNumber)
     {
         Monsters[] monsters = GetComponent<SpeechManager>().getMonsterDialogs();
+        if (monsterNumber < MonsterArray.Length)
+            monster = MonsterArray[monsterNumber];
+        else
+            Debug.Log("Monster out of range");
 
-        //hard coded
+        if (monsterNumber >= monsters.Length)
+            return;
 
-        int j = 0;
+        int j = monsterNumber;
         for(int i = 0; i < monsters[j].buildings.Length; i++)
         {
             switch(i)
@@ -149,4 +164,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public int GetMonsterArrayCount() => MonsterArray.Length;
 }

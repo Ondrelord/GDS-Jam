@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5fe9e9cc0d58ce48a087b5fd48524fd, type: 3}
-  m_Name: Monster
+  m_Name: Treant
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5353461ed88e53b49beead23d43e2d89, type: 3}
   strength: 3
-  winText: {fileID: 11400000, guid: 9c3559c7bbb8548429d539e911e14986, type: 2}
-  drawText: {fileID: 0}
-  loseText: {fileID: 11400000, guid: 0480fede61bdd1d49a402eb087fd660b, type: 2}
-  tags: []
+  winText: {fileID: 11400000, guid: d59b62d076c58ec44b37cbc54e8937be, type: 2}
+  drawText: {fileID: 11400000, guid: d59b62d076c58ec44b37cbc54e8937be, type: 2}
+  loseText: {fileID: 11400000, guid: 808cfce2233bf70418a6c748d1dec697, type: 2}
+  tags:
+  - sharp
+  - fire
+  - rope
+  - protects

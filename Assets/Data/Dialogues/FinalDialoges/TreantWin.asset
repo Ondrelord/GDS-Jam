@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ab0b36a983078499df9c9956c241b6, type: 3}
+  m_Name: TreantWin
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 21300000, guid: 5353461ed88e53b49beead23d43e2d89, type: 3}
+  npcName: 
+  monsterName: 
+  speakerName:
+  - Treant
+  - Treant
+  sentences:
+  - After your marvelous research you have found out where the Treant is hiding.
+    Obviously in the forest. You come to the darkest place in the forest and begin
+    to damage some random trees to provoke the Treant. And it worked.
+  - One of the oldest and widest trees suddenly moved your direction. Movement was
+    so slow, you would more probably die from old age. So you take matters into your
+    own hands and end this masquerade.
+  followupDialoge: {fileID: 0}

@@ -32,6 +32,19 @@ public class FightController : MonoBehaviour
         {
             FindObjectOfType<DialogueManager>().StartConversation(gm.GetMonster().GetLose());
         }
+
+        setUpNewMonster();
+    }
+
+    public void setUpNewMonster()
+    {
+        gm.monsterNumber++;
+        gm.AddMoney(100);
+
+        if (gm.monsterNumber >= gm.GetMonsterArrayCount())
+            gm.monsterNumber = 0;
+
+        gm.InitMonster(gm.monsterNumber);
     }
 
 

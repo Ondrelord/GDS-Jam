@@ -12,6 +12,7 @@ public class DialogueScriptableObject : ScriptableObject
 
     [TextArea]
     [SerializeField] public List<string> speakerName;
+    [TextArea]
     [SerializeField] public List<string> sentences;
 
     [SerializeField] DialogueScriptableObject followupDialoge;
