@@ -65,7 +65,7 @@ public class MonsterDialoqueBuildings
 
 public class personalDialoque
 {
-    [SerializeField] DialogueScriptableObject dialoque;
+    [SerializeField] public DialogueScriptableObject dialoque;
     public void loadSentences(string str)
     {
 
@@ -140,13 +140,14 @@ public class SpeechManager : MonoBehaviour
     void Start()
     {
         loadDialogs();
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-
+        GetComponent<GameManager>().InitMonster();
     }
 
     void loadDialogs()
