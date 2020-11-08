@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] NamedImage[] speakerSprites;
 
+
+    [Header("Buildings")]
+    [SerializeField] NPC alchemyBuilding;
+    [SerializeField] NPC libraryBuilding;
+    [SerializeField] NPC magicBuilding;
+    [SerializeField] NPC smithBuilding;
+    [SerializeField] NPC innBuilding;
+
     
 
     // Start is called before the first frame update
@@ -81,6 +89,6 @@ public class GameManager : MonoBehaviour
 
     public void InitMonster()
     {
-        var monsters = GetComponent<SpeechManager>().getMonsterDialogs();
+        Monsters[] monsters = GetComponent<SpeechManager>().getMonsterDialogs();
     }
 }

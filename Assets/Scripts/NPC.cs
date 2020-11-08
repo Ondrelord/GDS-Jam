@@ -8,9 +8,9 @@ public class NPC : MonoBehaviour, IChoicesForWheel
     [SerializeField] string npcName;
     [SerializeField] int bribe_price;
 
-    [SerializeField] DialogueScriptableObject rumour;
-    [SerializeField] DialogueScriptableObject bribe;
-    [SerializeField] DialogueScriptableObject shop;
+    [SerializeField] protected DialogueScriptableObject rumour;
+    [SerializeField] protected DialogueScriptableObject bribe;
+    [SerializeField] protected DialogueScriptableObject shop;
 
     [SerializeField] ItemScriptableObject[] itemsInShop;
 
@@ -22,7 +22,7 @@ public class NPC : MonoBehaviour, IChoicesForWheel
         FindObjectOfType<ChoiceWheelManager>().OpenWheel(this);
     }
 
-    public void GetRumour()
+    public virtual void GetRumour()
     {
         FindObjectOfType<DialogueManager>().StartConversation(rumour);
 
@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour, IChoicesForWheel
             rumour = rumour.GetFollowupDialogue();
     }
 
-    public void GetBribe()
+    public virtual void GetBribe()
     {
         FindObjectOfType<DialogueManager>().StartConversation(bribe);
 
@@ -38,7 +38,7 @@ public class NPC : MonoBehaviour, IChoicesForWheel
             bribe = bribe.GetFollowupDialogue();
     }
 
-    public void GetShop()
+    public virtual void GetShop()
     {
         FindObjectOfType<DialogueManager>().StartConversation(shop, true);
         print(gameObject.name);
@@ -47,4 +47,10 @@ public class NPC : MonoBehaviour, IChoicesForWheel
         if (shop.HaveFollowupDialogue())
             shop = shop.GetFollowupDialogue();
     }
+
+    public virtual bool canShop() => true;
+
+    public virtual bool canBribe() => true;
+
+    public virtual bool canRumour() => true;
 }

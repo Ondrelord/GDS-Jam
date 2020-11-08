@@ -15,9 +15,13 @@ public class ChoiceWheelManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = true;
         choiceWheel.SetActive(true);
 
-        rumourButton.onClick.AddListener(choices.GetRumour);
-        bribeButton.onClick.AddListener(choices.GetBribe);
-        shopButton.onClick.AddListener(choices.GetShop);
+        if (choices.canRumour()) rumourButton.onClick.AddListener(choices.GetRumour);
+        if (choices.canBribe()) bribeButton.onClick.AddListener(choices.GetBribe);
+        if (choices.canShop()) shopButton.onClick.AddListener(choices.GetShop);
+
+        rumourButton.gameObject.SetActive(choices.canRumour());
+        bribeButton.gameObject.SetActive(choices.canBribe());
+        shopButton.gameObject.SetActive(choices.canShop());
     }
 
     public void CloseWheel()

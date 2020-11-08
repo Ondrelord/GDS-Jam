@@ -4,4 +4,8 @@
     void GetBribe();
     void GetShop();
 
+    bool canShop();
+    bool canBribe();
+    bool canRumour();
+
 }
