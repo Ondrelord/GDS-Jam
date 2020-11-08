@@ -10246,9 +10246,18 @@ MonoBehaviour:
   bribe: {fileID: 11400000, guid: 0480fede61bdd1d49a402eb087fd660b, type: 2}
   shop: {fileID: 11400000, guid: 0480fede61bdd1d49a402eb087fd660b, type: 2}
   itemsInShop:
+  - {fileID: 11400000, guid: 1566e087afc91f441a9394b8c1e43e31, type: 2}
+  - {fileID: 11400000, guid: 48ddbd4883415a343acc8f8ce292dece, type: 2}
+  - {fileID: 11400000, guid: 76e4b775a5d8f5d4e9dd34ac8e329228, type: 2}
+  - {fileID: 11400000, guid: c098ef8124ec5cf429ac5695bba6e1bb, type: 2}
+  - {fileID: 11400000, guid: f38f3fad6ffe70f4e96c840ea6fdbb14, type: 2}
+  - {fileID: 11400000, guid: 2edce8856e2ba2c41a99d4ee859ad475, type: 2}
   - {fileID: 11400000, guid: 2048406827bb9254bb21d58a85f42316, type: 2}
+  - {fileID: 11400000, guid: 9fe225461fdc7e848867fbbbfe939fb6, type: 2}
+  - {fileID: 11400000, guid: 462219bd811dfd2439b3750d4d3c5744, type: 2}
   - {fileID: 11400000, guid: 33d3d6416a789124d9fb829eb1948de9, type: 2}
   - {fileID: 11400000, guid: 2847c187bd9a60d43a81cae85ab9f76d, type: 2}
+  - {fileID: 11400000, guid: e2f3ee1bd19a85b4d9794621f02e87a5, type: 2}
   b_canRumour: 1
   b_canBribe: 1
   b_canShop: 1
