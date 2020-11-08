@@ -5,11 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Dialog", menuName = "Dialog")]
 public class DialogueScriptableObject : ScriptableObject
 {
-    [SerializeField] Sprite npcImage;
-    [SerializeField] string npcName;
+    [SerializeField] public Sprite npcImage;
+    [SerializeField] public string npcName;
 
     [TextArea]
-    [SerializeField] string[] sentences;
+    [SerializeField] public string[] speakerName;
+    [SerializeField] public string[] sentences;
 
     [SerializeField] DialogueScriptableObject followupDialoge;
 
