@@ -176,4 +176,9 @@ public class SpeechManager : MonoBehaviour
             i++;
         }
     }
+
+    public Monsters[] getMonsterDialogs()
+    {
+        return monsterDialogs;
+    }
 }
