@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
         UpdateMoneyDisplay();
     }
     public int GetMoney() => moneyCurrent;
+    public void Bribe() => SpendMoney(25);
     public bool SpendMoney(int amount)
     {
         if (moneyCurrent - amount >= 0)

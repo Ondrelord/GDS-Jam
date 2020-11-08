@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -21,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     bool opened = false;
     float t = 0;
     bool isShop = false;
+    bool isDead = false;
 
     GameManager gm;
 
@@ -43,7 +45,7 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    public void StartConversation(DialogueScriptableObject dialogue, bool isShop = false)
+    public void StartConversation(DialogueScriptableObject dialogue, bool isShop = false, bool isDead = false)
     {
         GameObject.FindGameObjectWithTag("Rayblocker").GetComponent<Image>().enabled = true;
         sentences.Clear();
@@ -56,6 +58,7 @@ public class DialogueManager : MonoBehaviour
             speakerNames.Enqueue(speaker);
 
         this.isShop = isShop;
+        this.isDead = isDead;
         opened = true;
 
         dialogueNPCImage.sprite = dialogue.GetImage();
@@ -113,6 +116,11 @@ public class DialogueManager : MonoBehaviour
 
     public void EndConversation()
     {
+        if (isDead)
+        {
+            SceneManager.LoadScene("MenuScene");
+        }
+
         if (isShop)
         {
             FindObjectOfType<ShopManager>().OpenShop();
