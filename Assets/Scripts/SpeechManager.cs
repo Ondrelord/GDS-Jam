@@ -72,7 +72,7 @@ public class personalDialoque
         //dialoque = new DialogueScriptableObject();
         //split speech of each person in dialoque
         //Debug.Log(str);
-        string[] dial = str.Split('!');
+        string[] dial = str.Split(';');
         if (dial.Length == 0)
         {
             return;
@@ -88,7 +88,7 @@ public class personalDialoque
         {
             int startPos = sentence.IndexOf(":", 0, sentence.Length);
 
-            if (startPos < 0 && sentence!="" )
+            if (startPos < 0 && sentence!="" && sentence != "\n")
             {
                 string errMsg = "ERROR: invalid format in: \"";
                 errMsg += sentence;
@@ -98,19 +98,19 @@ public class personalDialoque
             }
             else
             {
-                if(sentence != "" && sentence != "\n" && sentence.Length > 1)
+                if(sentence != "" && sentence != "\n" || sentence.Length > 1)
                 {
-                    string tmp = "";
+                    //string tmp = "";
                     if (sentence[0] == '\n')
                     {
-                        tmp += sentence.Substring(1, startPos-1);
-                        Debug.Log(tmp);
+                        /*tmp += sentence.Substring(1, startPos-1);
+                        Debug.Log(tmp);*/
                         dialoque.speakerName.Add(sentence.Substring(1, startPos-1));
                     }
                     else
                     {
-                        tmp += sentence.Substring(0, startPos);
-                        Debug.Log(tmp);
+                        /*tmp += sentence.Substring(0, startPos);
+                        Debug.Log(tmp);*/
                         dialoque.speakerName.Add(sentence.Substring(0, startPos));
                     }
                         
@@ -172,6 +172,7 @@ public class SpeechManager : MonoBehaviour
             actualMonsterName = monster.Substring(0, startPos);
             string monSbstr = monster.Substring(startPos + 1, (monster.Length - startPos - 1));
             monsterDialogs[i] = new Monsters();
+            monsterDialogs[i].monsterName = actualMonsterName;
             monsterDialogs[i].loadBuildings(monSbstr);
             i++;
         }

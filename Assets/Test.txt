@@ -1,5 +1,247 @@
-drak ja: doma!*/
-ja: doma!*/
-ty: prec*/|
-drak2 ja2: doma2!/*
-ty2: prec2
+Dragon 
+Intro: MC slowly opens the door, and lets in a summer breeze. “Hold the door!” Someone yields. A figure rushed out of the building. What is going on here? MC walked right to the bartender and rested his elbow on the barpult.;
+MC: -clears throat- “Bílé víno a minerálku, prosím.”;
+IN: “What?”;
+MC: “Una Tequilla por favor.”;
+IN: “What?”;
+MC: “Just a beer, please”;
+Intro: Bartender pours a cup and brings it to MC. IN lean over the bar and ask.;
+IN: “Is that poop on your shoes?”;
+MC: -sadly- “Once again I have poop on my feet.”;
+Intro: MC waddles away, and sets down by the table nearest to the fire pit.;
+Slender man: “... and I also heard that the monster is thirty feet high and spits fireballs.” “It has a beak full of fangs and naked body.”; 
+Bulky man: -everyone by the table bursts into laughter- “Yes, and also dance in moonlight on the Jensen meadow.”;
+Slender man: “And I heard that this monster farts rainbow.” “Also that It can eat a whole cow and just drink a river afterwards.”;
+Short man: “And I heard… -silence- … I forgot be, be, be.”;
+Bulky man: “Be, be, because of the brick, that hit your head, when you were young.”;
+Intro: -everyone laughs- MC walks to their table and asks.;
+MC: “Hello merry men, I am MC the monster hunter and I would like to talk about the monster you have just discussed.”;
+Bulky man: “Well, what would you like to know.”;
+MC: “What is its weakness, how it looks like, where is its lair, what size of shoes it has, everything.”;
+Short man: “Its lair is…”;
+Bulky man: “Shhh, shhh, shhh.” “I think my friend we have nothing to drink and we are so thirsty to talk.”*
+MC: buys beer for all of them. “So what can you tell me?”;
+Bulky man: -sips- “About what?”;
+MC: “The monster of course.”;
+Slender man: -seriously- “It is as big as Jensen barn.” “It has big sharp claws, and a beak.” “I've heard it from BS the blacksmith.”;
+Short man: “I have heard that… -silence- … be, be, be, that it is the biggest lizard in the world.” “It is a real monster I've heard.” “They were also talking about killing it.” “The best way is to feed it with sheep filled with nails and pitch.”;
+Bulky man: “It is bull crap.”;
+Short man: “It is not, I heard it on market square from Mayor MA and Alchemist AL dialogue.” ;
+Bulky man: “Best way to oppose that monster is to wait in the shadows and pierce it with a really big and pointy stake.”;
+Bulky man: “What is known that every now and then a cattle or sheep disappear into thin air.”; 
+Slender man: “It is true, at first we thought that the shepherds just, you know, did what shepherds do.”;
+Short man: “You mean THE thing?” -shows rude gesture-;
+Slender man: “No you pig.” “We thought that they silently put down the sheep and ate the meat.” “But the truth is the monster lives by our homes.” “My wife saw it with her own eyes, tell them Yola.” “Tell them what you saw.”;
+Intro: Yola is a waitress in the tavern. She came immediately as she was called.;
+Yola: “It was a week ago, dark night, I saw the biggest figure I ever saw lurking around Jensen Barn.” “It had roughly a human shapes, but waaaay bigger.” ;
+MC: “Did you see it directly?”;
+Yola: “No, but I saw the shadow on the barn and the sound it made.” “Horrible metal like sounds.”;
+Bulky man: “What?” “Why haven't you told us yet?”;
+Yola: ”You haven't asked nice!”;
+Intro: -big discussion started-/
+LI: “Greetings monster hunter, I am the great Librarian LI, I've been waiting for you.”;
+MC: “Oh, not this again.” “I am here for your advice on how to kill a dragon.”;
+LI: “Now step closer and… wait, what?” “A dragon?” “Where?”… wait, what?” “A dragon?” “Where?”;
+MC: “Mayor MA told me that you have problems with monster dragon.”;
+LI: -laughter-;
+Intro: -awkward silence-;
+LI: “Oh, you mean it?!”;
+MC: “Of course.”;
+LI: -laughter- “No, no, no.” “I admit, it is a vile monster, but no dragon.” “It is a very big lizard.”;
+MC: “Lizard, dragon, whatever it is, It needs to be killed.”;
+LI: “Well, let me put it straight.” “ You don't need any fireball spell, but magic, indeed.” “The magic of LOVE, my dear.”;
+MC: -facepalm- “Well, thanks.”;
+LI: “And the last thing.” “We think the Snake cult is behind this fraud, I mean, not it will help you in the field of fighting, but you should know.”;
+LI: -tappin his wrist- “You should go my dear, because…” “Why am I tapping my wrist?” “You should go.”*
+LI: “Haha, sorry, my wisdom is not for sale.”/
+Intro: -clinging metal-;
+MC: “Good day, good sir.” “Is everything good?”;
+BS: “Good day to you too.” “Good is good, but there is still little something to be gooder.”;
+MC: “Good, good.”;
+BS: “Did you, good sir, want to buy something too?”;
+MC: “Good sir…” “No!” “Wait!” “Hold your horses.” “We don't want to walk this road, good sir.” “Aw F…”;
+Intro: -eye contact-;
+MC: -inhale-,-focused exhale- “Hello, I am a monster hunter, and I need a weapon.”;
+BS: “Phew, I thought it will never stop.” “What kind of weapon do you need kind...NEED?”;
+MC: “My intention is to slay a monster.” “I have my trusty, not rusty sword, but I want to ask for your opinion.” “What would be the best weapon, or tactic to kill the monster.”;
+BS: “Ha, then you came to the best place.” “I want to tell you that I somehow envy you that you will fight that dragon.” “I heard that he is twenty feet high and his fangs are as big as your leg.” “The best tactic would be to corner it and then to tie it up for experiments.”;
+MC: “It's good that no dragon killing will be involved, just some bigass lizard, I suppose” ;
+BS: “ You are damn right, this is one big fellow.” “I think I haven't told you the story.” “Have you heard about the bird?”;
+MC: “What about the bird?”;
+BS: “Have you heard that the bird… -dramatic break- ...which Librarian LI owned, flew away?”;
+MC: “What does it have to do with anything in this story?”;
+BS: “I have heard that the bird was somehow changed into this creature you are hunting.” “The bird grew unnaturally, lost almost all his feathers, and has a beak full of fangs.”;
+MC: “Well, shiver me timbers.” “What does it mean, anyway.” “Listen man, I just need the best weapon, and a piece of armor.”;
+BS: “Now we are talking.” “For this kind of job I would prefer the old rusty chopping axe.” “For the record I have never been in battle, but I butchered some chickens.”;
+MC: “What would be better equipment to fight an overgrown chicken who spits fire,right?”; 
+BS: “And then the breastplate with a gentle polishing touch, you know, -unisono- to reflect the fire.” “Now, let me show you my goods.”;
+Intro: -eye contact-*
+BS: “I am a simple and honest fellow, I already told you everything.”*
+BS: “Just look at my wares.”;
+BS: “Before you go I have one thing to tell you.” “I saw the other night a member of the Snake cult running across the street.” “Not it will matter now, but why would I keep it secret.” “I think he tried to poison well on the square, but he was interrupted by some drunkards.”;
+BS: “Farewell.”*/
+MA: “Greeting traveler, I am the Mayor MA of this beautiful town. I am in great honor to welcome you here. Please, can I offer you a cup of fresh cranberry juice? It is, undoubtedly the best refreshment after a long journey,”;
+MC: -nods in agreement and sips- ;
+MA: “Tasty, isn't it.” ;
+Intro: -awkward silence- ;
+MA: “Anyway, I have summoned you here, because we got some terrible issues with livestock. We, or more precisely the shepherds, are experiencing a lot of unnatural deaths among his flock.” ;
+MA: “We need you to do some investigation and afterwards to deal with the problem.” “Eventually to kill the monster which troubles us.” “Do you accept the job?” ;
+MC: “Do you want me to kill it?” “How?”;
+MA: “The best way I suggest is without witnesses.”;
+MC: “Okay, but how do I kill it?”;
+MA: “I don't really care, afterwards, you are the monster hunter.” “Kill it with, I don't know, with fire, or acid.”;
+MA: “Would you like more cranberry juice?”;
+MC: In order to gather all necessary data about your problem I need to talk to others.;
+MA: “Oh, indeed, I recommend you to seek the Librarian LI, and also Alchemist AL, who already did some tests on flock and also questioned shepherds.” “Also I can provide some more info if you like.”;
+MA: “I personally have some information I have heard at the town fair, rumors I would say.” “It's a dragon, a twenty feet tall rainbow colored creature with horns and fish scales.” “It flies over the field and steals cattle,or two, they say.” “Our farmers breed the finest cows in the region!” ;
+MC: “Did they see it with their very own eyes?”;
+MA: “No, I would say not, but some villagers heard the roaring from the hills.”;
+MC: “Did u see that creature?”;
+MA: “Not exactly, but every night i have a strong feeling that something evil is lurking down the streets of Sonna.” “I fear that this is only the beginning.” ;
+MC: “Can you tell me where it dwells?”;
+MA:” It was seen around Jensen farm near the forest and some folks heard roaring from hills.”;
+MC: “Anything else?”;
+MA: “You have to keep it a secret that I have told you about, but there is another issue.”;
+MC: “What?”;
+MA: “One of the farmgirls has disappeared.”;
+MA: “Would you like more cranberry juice?”;
+MC: “Okay, let's do the killing.;
+MA: “Farwell, my friend.”*
+MA: “What do you think you are doing?” “You can't bribe me!” “I am the Mayor!”/
+MC: “I've heard that you got some information about the rainbow colored creature.”;
+AL: “What? Who told you that?”;
+MC: “Easy man, I have spoken to Major MA, and he advised me to seek you out.”;
+AL: -mumbling- ;
+MC: “Hey, I just want some information, and I will be on my way.”;
+AL: “Where did he get the idea of rainbow colored dragon, for Father's sake?” “I never told him anything.” … -mumbling- … “There is no, literally, no magic rainbow smegin´ dragon flying around.” ;
+AL: “Don't be an idiot and talk to shepherds yourself.” “I did my own research and there is no dragon, otherwise it would be dead cold there on my table.” ;
+MC: “So how do you think is the best way to kill it?” “Everyone has weakness and monsters are no difference.”;
+AL: “In my opinion the best way would be to let it live.” ;
+MC: But it is dangerous!”;
+AL: “People are dangerous.” “This monster, you call so, is a misfit, a nature's play, driven from woods here, among us, because we deforest the land so fast.” ;
+AL: “I think that the Snake cult is behind all this unnatural behavior of living creatures.” “In this matter Librarian LI and I both agree.”*
+MC: “I would like to know everything you found out:”;
+AL: “My boy, this is fine work, not suitable for public eyes.” “But if you can give me a certain amount of money on which my eyes can feast on, I would share little something with you.”*
+Intro: I have questioned the shepherd:
+	He told me that he milks all his flock everyday in the morning. 
+I think he is telling me only half of the story, ´cos I know very well what shepherds are capable of and I am ready to bring it out. 
+Afterwards the sheep heads the meadow and stays there till sunset. During daytime, sheep are guarded by dogs and also by shepherds.
+This is another of their tricks. They let sheep to feed on grass and shepherds sleep under the nearest tree. Flock is vulnerable, or handed out, to any possible crime. 
+Everyday he counts his flock, but sometimes one, or two are considered MIA (missing in action). 
+Honestly, did you ever hit on any shepherd who knew how to count more than ten sheep? It is recklessness or on purpose that any of them can't count his own fingers
+MC: “Hmm, funny, he milks the flock every morning, every one of them.” Even the male ones?/
+Intro: MC found himself on the crowded square of Sonna. He walked down the street when suddenly saw one of the shepherds buying something at one of the stands. MC fastened his pace and greeted the shepherd.;
+MC: “You are just the one I want to speak with.”;
+SH: “Oh, really?” “What's the matter.”;
+MC: “I am MC the monster hunter and Mayor MA trusted me an important quest, to get rid of the creature torturing this marvelous village.”;
+SH: “Oh, is that so?” “How can I help you?”;
+MC: “I would like to know everything you know about this beast, at last you are the damsel in distress, or more precisely your flock.”;
+SH: “Ha, ha, very well put my friend, but you are a little bit wrong.”;
+MC: “Excuse me?” “I've been told that you are missing livestock.”;
+SH: “Yeah, that is certainly right, but there is one bigger issue and that would be the missing girl.” “One of the Jensens baby girls.” “She was about to turn fourteen this summer, and now she vanished without a trace”;
+MC: “That is certainly disturbing, but how do you know she didn't run away with a boy?.”;
+SH: “We don't.” “Anyway, you wanted to ask me something.”;
+MC: “Indeed.” “I would like to know whether you saw the beast or not.” “If you can help me to prepare for the fight, or tell me what tactic I should choose.”;
+SH: “Don't get me wrong, but I am just a shepherd, not a warrior.” “I admit I heard some terrible hissing, echoing on meadows and also one afternoon, just before returning home I glanced at the sky and saw a silhouette of a big bird, or a bat flying across silently.” ;
+SH: “I didn't see anything like it ever after.” “I don't know how to prepare to fight an overgrown bird, but if you ask me, if it was a dragon, I would use a stuffed animal with pitch and nails.” “I've read it in a book.”;
+MC: “This could come handy.” “Thanks” ;
+MC: “Wait, you know how to read?”;
+SH: “It surprises you?” “Why wouldn't I?”;
+MC: “I've just… the Mayor, he… oh, nevermind.” “Godspeed.”/
+Intro: MC stepped into a dusty room full of old books. He didn't see anybody, so he began to browse freely. After a little search he found a very interesting book. All known bestiary. 
+
+As mentioned already, their scales are hard, their breath is hot, and they can fly. However, it's not necessary to actually fight it to kill it. There are plenty of written entries on how to deal with these creatures. Kill a cow and stuff a pouch of acid down its stomach, and offer it to the dragon. The acid damages his gullet the throat, preventing the firebreath, however, the dragon can still fight. A good hunter can keep the distance and uses a bow to aim for the mouth or eyes. Never use spells to kill a dragon. Dragon can be harmed by magic guild lvl.5 spells only, it is known./|
+Treant 
+IN: “Welcome thirsty traveler, can I offer you a drink?”;
+MC: “Show me the firepit, quick!”;
+IN: -shocked- “O o over there.”;
+Intro: MC rushes to the firepit kneeling and concentrating.;
+Bulky man: “What are you doing weirdo?”;
+MC: “Shh!”;
+Intro: -silence-;
+Bulky man: “I heard that if you look into the fire for a while, you can see your future.”;
+Slender man: “That is true and also after a while a blue smoke evaporates from the logs.”;
+MC: “Really?”;
+Intro: MC is staring into the fire for an hour.”;
+Short man: “Did you see that?”;
+MC: “Sorry folks, I see just regular fire.”;
+Short man: “I swear on my only shoe, yesterday I was home and the fire literally jumped out of the fireplace and returned back.”;*
+MC: “Here, have some drinks on me” “Now cut the fairytales, I want to hear the truth.”;
+Short man: “Be, be, be, I told you the truth, I just returned home from the tavern.”;
+Bulky man: “If you don't trust me, go and see the LI the magician.”;
+MC: “I also need to know how to fight it.”;
+Bulky man: “This is the right place, we chop wood every day.”;
+MC: “Thanks.”/
+LI: “Greetings monster hunter, I am the great Librarian LI, I've been waiting for you.”;
+MC: “Do you know me?”;
+LI: “I do now.”;
+MC: “How could you have been waiting for me, when you didn't know I am coming?”;
+LI: “I have been watching your steps for quite a while now.”;
+MC: “How could you watch me for a long time?”;
+LI: “ Did you forget?” “I am the almighty Librarian.” “I know things.”;
+MC: “How could you, oh … whatever, this can continue for ever.” “Can you tell me anything about the monster I am about to face?”;
+LI: “Well, of course I can help you with your quest:”;
+Intro: -silence-;
+MC: “And will you?”;
+LI: “Yes.”;
+Intro: -awkward silence-;
+LI: -clears throat- -very loud speech- “Behold, mortal, your search is over.” “I, and only I, can teach you magic that can help you on your quest. -cough-;
+MC: “Yes, I will totally crisp the creature with that spell of yours.”;
+LI: “I give you the fireball, which is obviously the best alternative to fight wood, living or dead.”;
+MC: “What do you think I am dealing with?”;
+LI: “Isn't it obvious?” “Treant, vile wood, if you like, creature raised by dark magic.” ;*
+MC: “I will give you…”;
+LI: “There is nothing you could possess, which would raise my interest.” “Only if you had white crystalline dust by accident.” “But I will give you this free.” “Wood is vulnerable to fire.”/
+Intro: -clinging metal-;
+MC: “Hello good sir.”;
+BS: “Good day to you too, good sir.” “What do you need.”;
+MC: “I need information about the wood.”;
+BS: “Go see a carpenter.”;
+MC: “What can you tell me about local woods?”;
+BS: “I don't know much, I barely leave my workshop, but I heard a story that a woodcutter had a problem.” “He came to a tree, swung his axe and boom.” “He found himself sitting on the ground.”;*
+MC: “I have some gold on me.”;
+BS: “If you want wood, go fetch some, or chop on your own.” “Only wood I use is charcoal.”/
+MA: “Greeting traveler, I am the Mayor MA of this beautiful town. I am in great honor to welcome you here. Please, can I offer you a cup of fresh cranberry juice? It is, undoubtedly the best refreshment after a long journey,”;
+MC: -nods in agreement and sips- ;
+MA: “Tasty, isn't it.” ;
+Intro: -awkward silence-;
+MA: “I don't know if you are familiar with our problem here.” “Let me enlighten you.”;
+MA: “We received several reports of wood behaving… differently.”;
+MC: “What do you mean by that?”;
+MA: “Look at this.”;
+Intro: He walks near the firepit and throws a log into the fire.;
+MA: “See?”;
+MC: “I can't see anything.”;
+Intro: -screaming-;
+MC: “What was that?”;
+MA: “This my friend is the problem.” “Wood behaves differently.”;
+MC: “Wow, is this some kind of magic?;
+MA: “I don't think so, but I have a strong feeling that the wood should not behave this way.”;
+MC: “Okay, I will take a look at this.”;
+MA: “Farewell.”;*
+MA: “What do you think you are doing?” “You can't bribe me!”;/
+AL: “Greetings.” “Do you need something?”;
+AL: -enthusiastic- “Did you hear that?” “They spotted it.” “Finally somewhere near.”;
+MC: “What are you talking about?”;
+AL: “Vile wood specimen.”;
+MC: “What is it?”;
+AL: “A living creature, treant!”;
+MC: “Is this even real?”;
+AL: “You haven't heard?” “Wood is hissing in fireplaces, beating the woodcutters.”;
+MC: “I am going to kill it.”;
+AL: “I can't allow you to do that.” “I have experiments to do and I need that wood.”;
+MC: “How do you want to kill it?”;
+AL: “I am planning to water it.” “I will fetch a bucket and go watering that plant.”;
+MC: “Water will kill it?";
+AL: “Definitely.” “You see, it is not ordinary wood, it is a magical creature, therefore water.”*
+MC: “I don't think you are honest with me.” “You just see your profit.”;
+AL: “You are right.” “I lied to you.” “The truth is I have no idea how to kill it.”/
+Intro: Marketplace is incredibly busy today, you haven't found anyone to talk to. Wood simply screaming out of the fireplace is not a relevant topic.;/
+Intro: MC stepped into a dusty room full of old books. He didn't see anybody, so he began to browse freely. After a little search he found a very interesting book. All known bestiary. 
+
+Living wood 
+
+Treants are vile creatures born from residues of dark magic, or presence of demons. Sometimes it can raise as a consequence of deforestation. Natural protection of mother nature.
+
+Successful way to deal with these monsters is to burn down the forest, or drive out the demon who possessed the tree, to call an exorcist. Holy cross can be very helpful but you need to know your way around. Never approach the treant with anything wooden on you!;/
+
