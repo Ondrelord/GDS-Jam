@@ -90,5 +90,57 @@ public class GameManager : MonoBehaviour
     public void InitMonster()
     {
         Monsters[] monsters = GetComponent<SpeechManager>().getMonsterDialogs();
+
+        //hard coded
+
+        int j = 0;
+        for(int i = 0; i < monsters[j].buildings.Length; i++)
+        {
+            switch(i)
+            {
+                case 0:
+                    SetDialoquesToBuilding(innBuilding, monsters[j].buildings[i].buildingDialoques);
+                    break;
+                case 1:
+                    SetDialoquesToBuilding(magicBuilding, monsters[j].buildings[i].buildingDialoques);
+                    break;
+                case 2:
+                    SetDialoquesToBuilding(smithBuilding, monsters[j].buildings[i].buildingDialoques);
+                    break;
+                case 4:
+                    SetDialoquesToBuilding(alchemyBuilding, monsters[j].buildings[i].buildingDialoques);
+                    break;
+                case 6:
+                    SetDialoquesToBuilding(libraryBuilding, monsters[j].buildings[i].buildingDialoques);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    }
+
+    public void SetDialoquesToBuilding(NPC building, personalDialoque[] buildingDialoques)
+    {
+        for(int i=0; i < buildingDialoques.Length; i++)
+        {
+            switch(i)
+            {
+                case 0:
+                    building.setRumor(buildingDialoques[i].dialoque);
+                    building.b_canRumour = true;
+                    break;
+                case 1:
+                    building.setBribe(buildingDialoques[i].dialoque);
+                    building.b_canBribe = true;
+                    break;
+                case 2:
+                    building.setShop(buildingDialoques[i].dialoque);
+                    building.b_canShop = true;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

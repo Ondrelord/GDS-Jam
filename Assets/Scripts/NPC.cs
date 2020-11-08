@@ -14,9 +14,9 @@ public class NPC : MonoBehaviour, IChoicesForWheel
 
     [SerializeField] ItemScriptableObject[] itemsInShop;
 
-    public bool b_canRumour = true;
-    public bool b_canBribe = true;
-    public bool b_canShop = true;
+    public bool b_canRumour = false;
+    public bool b_canBribe = false;
+    public bool b_canShop = false;
 
     private void OnMouseDown()
     {
@@ -52,9 +52,25 @@ public class NPC : MonoBehaviour, IChoicesForWheel
             shop = shop.GetFollowupDialogue();
     }
 
-    public bool canShop() => b_canShop;
+    public void setRumor(DialogueScriptableObject d)
+    {
+        rumour = d;
+    }
 
-    public bool canBribe() => b_canBribe;
+    public void setBribe(DialogueScriptableObject d)
+    {
+        bribe = d;
+    }
+
+    public void setShop(DialogueScriptableObject d)
+    {
+        shop = d;
+    }
+
 
     public bool canRumour() => b_canRumour;
+    public bool canBribe() => b_canBribe;
+
+    public bool canShop() => b_canShop;
+
 }
